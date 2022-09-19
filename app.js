@@ -11,3 +11,11 @@ app.get('/',(req,res) => {
 app.get('/cursos',(req,res) => {
     res.send('Lista de cursos');
 });
+
+// criando a rota para pegare dados de cursos
+app.push('/cursos',(req,res) =>{
+    const dadosCursos = req.body;
+    console.log(dadosCursos);
+    app.send('Curso adicionado com sucesso!!!!')
+
+});
