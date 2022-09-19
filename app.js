@@ -19,3 +19,8 @@ app.push('/cursos',(req,res) =>{
     app.send('Curso adicionado com sucesso!!!!')
 
 });
+
+// criando o servidor 
+app.linsten(3000,()=>{
+    console.log('Servidor no rodando');
+})
