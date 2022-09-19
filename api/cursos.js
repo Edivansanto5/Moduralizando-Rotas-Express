@@ -1,10 +1,11 @@
 const express = require('express');
 const router  = express.Router();
 
+const listaCurso = []
 
 // criando a rota de curso
 router.get('/cursos',(req,res) => {
-    res.send('Lista de cursos');
+    res.json(listaCurso);
 });
 
 // criando a rota para pegare dados de cursos
