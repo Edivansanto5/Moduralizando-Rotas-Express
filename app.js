@@ -1,11 +1,10 @@
-const router = require("./api");
+const express = require('express');
 
 const app = express();
+
 app.use(express.json());
 
-
-
 // criando o servidor 
-app.linsten(3000,()=>{
-    console.log('Servidor no rodando');
+app.listen(3000,()=>{
+    console.log('http://localhost:3000');
 })
