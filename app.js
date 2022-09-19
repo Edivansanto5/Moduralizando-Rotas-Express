@@ -1,3 +1,4 @@
+const router = require("./api");
 
 const app = express();
 app.use(express.json());
