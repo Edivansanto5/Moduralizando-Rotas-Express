@@ -9,15 +9,12 @@ router.get('/cursos',(req,res) => {
 });
 
 // criando a rota para pegare dados de cursos
-router.push('/cursos',(req,res) =>{
+router.post('/cursos',(req,res) =>{
     const dadosCursos = req.body;
     listaCurso.push(dadosCursos)
     console.log(dadosCursos);
     app.send('Curso adicionado com sucesso!!!!')
 
 });
-
-
-
 
 module.exports = router;

@@ -10,7 +10,7 @@ router.get('/',(req,res)=>{
     res.send('app online ');
 });
 
-router.use('/cursos',cursoRouter);
-router.use('/estudantes',estudantesRouter);
+router.use('/',cursoRouter);
+router.use('/',estudantesRouter);
 
 module.exports = router;
