@@ -8,5 +8,6 @@ router.get('/',(req,res)=>{
     res.send('app online ')
 });
 
+router.use('/cursos',cursos)
 
 module.exports = router;
