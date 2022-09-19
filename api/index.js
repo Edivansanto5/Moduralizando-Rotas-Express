@@ -1,9 +1,13 @@
-// importando o express para ser usado em cada modula
 
 const express = require('express');
+
+const cursoRouter = require('./cursos')
+const estudantesRouter  = require('./estudantes')
+
 const router = express.Router();
 
-// fazendo os tratamentos da rotas de barras
+
+
 router.get('/',(req,res)=>{
     res.send('app online ')
 });
